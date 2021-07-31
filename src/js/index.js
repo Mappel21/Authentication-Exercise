@@ -2,6 +2,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+import firebase from "firebase";
+import "firebase/analytics"
+import "firebase/auth"
 //include bootstrap npm library into the bundle
 import "bootstrap/dist/css/bootstrap.css";
 
@@ -24,6 +27,6 @@ var firebaseConfig = {
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
-
+  firebase.auth{}
 //render your react application
 ReactDOM.render(<Layout />, document.querySelector("#app"));
