@@ -4,14 +4,14 @@ import "../../styles/home.scss";
 
 
 
-export const Home = () => (
+export const Home = () => {
 	const [Email, setEmail]= useState("");
 	const [password, setPassword]= useState("");
 
 	const onSignInClicked[Email, password]=>{
-		
-	}
 
+	
+	return(
 	<span>
 		<div className="sidenav">
 			<div className="login-main-text">
@@ -28,7 +28,7 @@ export const Home = () => (
 					<form>
 						<div className="form-group">
 							<label>Email</label>
-							<input type="text" className="form-control" placeholder="Email" />
+							<input type="text" className="form-control" placeholder="Email" onChange={e=> setEmail(e.target.value)} />
 						</div>
 						<div className="form-group">
 							<label>Password</label>
@@ -46,3 +46,4 @@ export const Home = () => (
 		</div>
 	</span>
 );
+}
