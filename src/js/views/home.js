@@ -32,7 +32,7 @@ export const Home = () => {
 						</div>
 						<div className="form-group">
 							<label>Password</label>
-							<input type="password" className="form-control" placeholder="Password" />
+							<input type="password" className="form-control" placeholder="Password" onChange={e=> setPassword(e.target.value)}/>
 						</div>
 						<button type="submit" className="btn btn-black">
 							Login
