@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.scss";
 
+
+
 export const Home = () => (
+	const [Email, setEmail]= useState("");
+	const [password, setPassword]= useState("");
+	
 	<span>
 		<div className="sidenav">
 			<div className="login-main-text">
