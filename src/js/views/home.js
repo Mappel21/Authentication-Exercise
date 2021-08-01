@@ -7,7 +7,11 @@ import "../../styles/home.scss";
 export const Home = () => (
 	const [Email, setEmail]= useState("");
 	const [password, setPassword]= useState("");
-	
+
+	const onSignInClicked[Email, password]=>{
+		
+	}
+
 	<span>
 		<div className="sidenav">
 			<div className="login-main-text">
